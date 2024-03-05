@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Read and update content attributes accordingly  -->
+
+  <meta name="description"
+    content="Welcome to my portfolio website. I am a full-stack web developer and a Game Developer, I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations." />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Moubarak ELKouchi Portfolio">
+  <meta itemprop="description"
+    content="Welcome to my portfolio website. I am a full-stack web developer and a Game Developer, I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <!-- Reference screenshot of updated site's header in place of content -->
+  <meta itemprop="image" content="assets/images/sharing-card.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://ossportfolio.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Moubarak ELKouchi Portfolio">
+  <meta property="og:description"
+    content="Welcome to my portfolio website. I am a full-stack web developer and a Game Developer, I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta property="og:image" content="assets/images/sharing-card.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Moubarak ELKouchi Portfolio">
+  <meta name="twitter:description"
+    content="Welcome to my portfolio website. I am a full-stack web developer and a Game Developer, I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+  <!-- Update favicon href attribute with image of yourself -->
+  <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
+
+  <!-- Preloading fonts for better performance -->
+
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <!-- Your name here -->
+  <title>Moubarak EL Kouchi Portfolio</title>
+</head>
+
+<body>
+
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
+
+  <header class="header">
+
+    <div class="menu-btn-container">
+      <div class="container">
+        <button type="button" class="menu-btn">menu</button>
+      </div>
+    </div>
+
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#work">My Work</a></li>
+        <li class="nav-item"><a href="#blog">See Blog</a></li>
+        <li class="nav-item"><a href="#skills">My Skills</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contact</a>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="header-textbox">
+        <!-- Replace with your name and job title -->
+        <h1 class="h1">
+          <span>Hi, I'm Moubarak EL Kouchi</span>
+          <span>Web Developer and Game Developer</span>
+        </h1>
+
+        <!-- Add a small introductory paragraph about yourself -->
+        <p class="header-text">
+          A frontend software engineer and Game Developer and interface designer who builds UX
+          rich accessible and performant websites.
+        </p>
+
+        <div class="header-btns">
+          <a href="#contact" class="btn btn-cta">Hire me</a>
+          <a href="#work" class="btn btn-secondary">See my work</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="client">
+      <div class="container">
+        <h2 class="h2">Trusted by</h2>
+        <div class="logos">
+          <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/stripe.svg" alt="Ideacraft" class="logo hide to-top" />
+
+            <img loading="lazy" src="assets/images/trusted-by/datastax.svg" alt="Golden grid" class="logo" />
+
+            <img loading="lazy" src="assets/images/trusted-by/coke.svg" alt="Theia" class="logo hide to-bottom" />
+          </div>
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/gm.svg" alt="General motors" class="logo hide to-top" />
+
+            <img loading="lazy" src="assets/images/trusted-by/shares.svg" alt="Chippy" class="logo" />
+            <img loading="lazy" src="assets/images/trusted-by/shopify.svg" alt="Shopify" class="logo hide to-bottom" />
+          </div>
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/agency-elevation.svg" alt="Agency elevation"
+              class="logo hide to-top" /><img loading="lazy" src="assets/images/trusted-by/gitlab.svg" alt="Ron jones"
+              class="logo" /><img loading="lazy" src="assets/images/trusted-by/duolingo.svg" alt="Mighty furniture's"
+              class="logo hide to-bottom" />
+          </div>
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/coyote.svg" alt="Bulls eye" class="logo hide to-top" />
+            <img loading="lazy" src="assets/images/trusted-by/astrato.svg" alt="Chippy" class="logo" />
+            <img loading="lazy" src="assets/images/trusted-by/mercado.svg" alt="Fastlane" class="logo hide to-bottom" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container">
+        <h2 class="h2" id="work">Selected Work</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">portfolio template</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                A free to use, minimal and accessible portfolio template for
+                developers.
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>React</li>
+                <li>Gatsby</li>
+                <li>SCSS</li>
+                <li>MDX</li>
+              </ol>
+
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://github.com/MbarekTheEagle" target="_blank" rel="noopener" class="link">Explore this
+                  project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/MbarekTheEagle" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Update img src and alt attribute  -->
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/Portfolio.png" alt="agency elevation" />
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Yes Science</h3>
+              <!-- Add small description of your project  -->
+
+              <p class="work-text">Website for Science Learners.</p>
+              <ol class="work-technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://github.com/MbarekTheEagle/Yes-Science-" target="_blank" rel="noopener"
+                  class="link">Explore this project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/MbarekTheEagle/Yes-Science-" target="_blank" rel="noopener"
+                  title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/YesScience.png" alt="portfolio template" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Heart Monitor</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                The Heart Monitor App is a project that combines the power of PHP and Arduino to create a real-time
+                heart monitoring system.
+              </p>
+              <ol class="work-technologies">
+                <li>PHP</li>
+                <li>Arduino</li>
+                <li>MySQL</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://github.com/MbarekTheEagle" target="_blank" rel="noopener" class="link">Explore this
+                  project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/MbarekTheEagle" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/sensor.png" alt="contribute dev" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Ugly Cloud Skipper</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                It's a Unity game where a benevolent cloud avoids malevolent clouds.
+              </p>
+              <ol class="work-technologies">
+                <li>Unity Engine</li>
+                <li>Photoshop, Illustrator</li>
+                <li>C#</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://simmer.io/@Mbarek49/~f50ff2de-4266-a3d1-f420-90febf8219bb" target="_blank"
+                  rel="noopener" class="link">Explore this project</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/MbarekTheEagle" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/ugly.png" alt="contribute dev" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+    <section class="article">
+      <div class="container">
+        <h2 class="h2" id="blog">My Articles</h2>
+        <div class="article-boxes">
+          <article class="article-box featured-article">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h3">
+                  AngularJS Routing
+                </h3>
+                <p class="article-text">
+                  If you want to navigate to different pages in your application, but you also want the application to
+                  be a SPA (Single Page Application), with no page reloading, you can use the ngRoute module.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="https://dev.to/mbarekderadler/angular-js-routing-4366" class="link" target="_blank"
+                  rel="noopener">Continue reading</a>
+                <span class="reaction-count">
+                  <img src="./assets/images/heart-outline.svg" alt="heart" />
+                  20
+                </span>
+              </div>
+            </div>
+            <picture class="article-illustration">
+              <img src="assets/images/featured-blog.webp" alt="MacBook Pro" loading="lazy" />
+            </picture>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">React JS Forms</h3>
+                <p class="article-text">
+                  Just like in HTML, React uses forms to allow users to interact with the web page.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="https://dev.to/mbarekderadler/react-forms-hc3" class="link" target="_blank"
+                  rel="noopener">Continue reading</a>
+                <span class="reaction-count">
+                  <img src="./assets/images/heart-outline.svg" alt="heart" loading="lazy" />
+                  17
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">
+                  JavaScript Math Object
+                </h3>
+                <p class="article-text">
+                  The JavaScript Math object allows you to perform mathematical tasks on numbers.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="https://dev.to/mbarekderadler/javascript-math-object-14ff" class="link" target="_blank"
+                  rel="noopener">Continue reading</a>
+                <span class="reaction-count">
+                  <img src="./assets/images/heart-outline.svg" alt="heart" loading="lazy" />
+                  34
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">PHP Data Types</h3>
+                <div class="article-text">
+                  Variables can store data of different types, and different data types can do different things.
+                </div>
+              </div>
+              <div class="article-info">
+                <a href="https://dev.to/mbarekderadler/php-data-types-2p54" class="link" target="_blank"
+                  rel="noopener">Continue reading</a>
+                <span class="reaction-count">
+                  <img loading="lazy" src="./assets/images/heart-outline.svg" alt="heart" />
+                  350
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">My Toolkit</h2>
+        <div class="skills-imgs">
+          <img src="assets/images/skills/Angular_full_color_logo.svg.png" alt="Angular" class="skills-img"
+            loading="lazy" title="Angular">
+          <img src="assets/images/skills/typescript.png" alt="Typescript" class="skills-img" loading="lazy"
+            title="Typescript">
+          <img src="assets/images/skills/React.png" alt="React" class="skills-img" loading="lazy" title="React Js">
+          <img src="assets/images/skills/Unity-Logo.png" alt="Unity Engine" class="skills-img" loading="lazy"
+            title="Unity Engine">
+
+          <img src="assets/images/skills/JavaScript.png" alt="JavaScript" class="skills-img" loading="lazy"
+            title="JavaScript">
+          <img src="assets/images/skills/Html5.webp" alt="HTML" class="skills-img" loading="lazy" title="HTML">
+          <img src="assets/images/skills/CSS.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+          <img src="assets/images/skills/Php.png" alt="PhP" class="skills-img" loading="lazy" title="PHP">
+          <img src="assets/images/skills/Laravel.png" alt="Laravel" class="skills-img" loading="lazy" title="Laravel">
+          <img src="assets/images/skills/mongodb.svg" alt="Mongodb" class="skills-img" loading="lazy" title="Mongodb">
+          <img src="assets/images/skills/mysql.png" alt="Mysql" class="skills-img" loading="lazy" title="Mysql">
+          <img src="assets/images/skills/NodeJs.png" alt="NodeJs" class="skills-img" loading="lazy" title="NodeJs">
+          <img src="assets/images/skills/spring-boot-logo.png" alt="Spring Boot" class="skills-img" loading="lazy"
+            title="Spring Boot">
+          <img src="assets/images/skills/WordPress.png" alt="WordPress" class="skills-img" loading="lazy"
+            title="WordPress">
+          <img src="assets/images/skills/PsLogo.png" alt="Photoshop" class="skills-img" loading="lazy"
+            title="Photoshop">
+          <img src="assets/images/skills/Ailogo.png" alt="Illustrator" class="skills-img" loading="lazy"
+            title="Illustrator">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Replace testimonials, author name, author job, img src and, alt attributes 
+
+    <section>
+      <h2 class="h2">Testimonials</h2>
+      <div class="container">
+        <ol class="testimonials">
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Working with Syed was a great experience. His drive for clean aesthetics and his open communication style
+              helped us collaborate closely on the solution.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/rich-harris.png" alt="Rich Harris" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Harris Kareem</h3>
+                <p class="testimonial-author-job">Developer @Outlets</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Syed is a fantastic UI/UX designer and developer with a keen sense for marketing, and lead generation.
+              He's the only designer I know who also has a deep understanding for code and front-end development.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/frank-mcsherry.webp" alt="Andrew Mead" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">
+                  Andrew Mead
+                </h3>
+                <p class="testimonial-author-job">Chief Scientist @Logos
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+
+              Talented artist, experienced with various
+              media and can make any project you are working on look good. He is
+              easy to work with and is a self starter. I would work with Syed
+              again.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/brian-hirsh.png" alt="Brian Hirsh" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Brian Hirsh</h3>
+                <p class="testimonial-author-job">Head @Zero-in</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Syed is a true professional with amazing talent. He is a creative
+              thinker, has his finger on the pulse of whats to come, and
+              absolutely one of the quickest and best problem solvers I have
+              ever met.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/adam.png" alt="Adam Argalye" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Adam Argalye</h3>
+                <p class="testimonial-author-job">SWE @Google</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Syed is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new
+              technique or technology because she understands how to tackle unknown problems with gumption.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/val-head.png" alt="Val Head" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Val Head</h3>
+                <p class="testimonial-author-job">CEO @Engines</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Syed is a talented artist. He is very experienced with various
+              media and can make any project you are working on look good. He is
+              easy to work with and is a self starter. I would work with Syed
+              again.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/tim-satterwhite.webp" alt="Gary Simon" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Gary Simon</h3>
+                <p class="testimonial-author-job">A11y Advocate @W3C</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ol>
+      </div>
+    </section>-->
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2" id="contact">Send Message</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <!-- Please comment this component if you're not available for hire -->
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Available for hire
+            </strong>
+            <p class="contact-text">
+              As a software engineer, I construct web interfaces and design
+              systems with a special love for accessibility and the
+              performance. I tend to code things from scratch and enjoy
+              bringing ideas to life.
+            </p>
+            <p class="contact-text">
+              I'm also an open-source developer, and in my spare time, I do
+              digital art and Game Developing with my Laptop.
+            </p>
+            <!-- Replace src with your signatures and name 
+            <img src="assets/images/signatures.png" alt="Moubarak" class="signatures" loading="lazy" />-->
+          </div>
+
+          <section class="skills">
+            <div class="container">
+              <button class="btn btn-cta"><a
+                  href="https://mail.google.com/mail/u/1/?to=moubarakelkouchi61@gmail.com&su=Invitation%20to%20Join%20Our%20Team%20as%20[Position%20Title]&body=Dear%20[Candidate%E2%80%99s%20Name],%20I%20trust%20this%20email%20finds%20you%20in%20good%20health.%20I%20am%20reaching%20out%20to%20express%20our%20keen%20interest%20in%20extending%20to%20you%20the%20position%20of%20[Position%20Title]%20at%20[Company%20Name].%20Having%20thoroughly%20evaluated%20your%20qualifications%20and%20professional%20background,%20we%20firmly%20believe%20that%20your%20skill%20set%20aligns%20seamlessly%20with%20the%20requirements%20of%20this%20role,%20and%20we%20anticipate%20that%20you%20will%20contribute%20significantly%20to%20our%20team.%20At%20[Company%20Name],%20we%20are%20dedicated%20to%20cultivating%20a%20vibrant%20and%20collaborative%20work%20environment%E2%80%94one%20where%20talented%20individuals%20like%20yourself%20can%20thrive.%20Your%20unique%20abilities%20and%20experiences%20resonate%20harmoniously%20with%20our%20organizational%20values%20and%20objectives.%20As%20[Position%20Title],%20your%20responsibilities%20will%20encompass%20[Brief%20Description%20of%20Responsibilities].%20Your%20proficiency%20in%20[Key%20Skills%20or%20Technologies]%20will%20play%20a%20pivotal%20role%20in%20our%20pursuit%20of%20excellence%20and%20in%20delivering%20exceptional%20outcomes%20for%20our%20clients.%20We%20are%20genuinely%20excited%20about%20the%20prospect%20of%20collaborating%20with%20you%20and%20are%20confident%20that%20you%20will%20be%20a%20valuable%20asset%20to%20our%20team.%20Should%20you%20be%20interested%20in%20exploring%20this%20opportunity%20further,%20please%20do%20not%20hesitate%20to%20reach%20out.%20We%20would%20be%20delighted%20to%20arrange%20a%20meeting%20to%20address%20any%20queries%20you%20may%20have%20and%20provide%20additional%20insights%20into%20the%20role%20and%20our%20company.%20Thank%20you%20for%20considering%20this%20offer.%20We%20eagerly%20await%20your%20response.%20Warm%20regards,%20[Your%20Name]%20[Your%20Position]%20[Company%20Name]&fs=1&tf=cm"
+                  target="_blank" rel="noopener" style="text-decoration:none">E-mail</a></button>
+              <button class="btn btn-cta"><a href="https://www.linkedin.com/in/moubarak-elkouchi-353021148/"
+                  target="_blank" rel="noopener" style="text-decoration:none">Linkedin</a></button>
+              <button class="btn btn-cta"><a href="https://www.instagram.com/me.codes49/" target="_blank" rel="noopener"
+                  style="text-decoration:none">Instagram</a></button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Update href and src attributes -->
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/MbarekTheEagle" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Instagram" href="https://www.instagram.com/me.codes49/" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/instagram.png" alt="Instagram" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Gmail"
+                href="https://mail.google.com/mail/u/1/?to=moubarakelkouchi61@gmail.com&su=Invitation%20to%20Join%20Our%20Team%20as%20[Position%20Title]&body=Dear%20[Candidate%E2%80%99s%20Name],%20I%20trust%20this%20email%20finds%20you%20in%20good%20health.%20I%20am%20reaching%20out%20to%20express%20our%20keen%20interest%20in%20extending%20to%20you%20the%20position%20of%20[Position%20Title]%20at%20[Company%20Name].%20Having%20thoroughly%20evaluated%20your%20qualifications%20and%20professional%20background,%20we%20firmly%20believe%20that%20your%20skill%20set%20aligns%20seamlessly%20with%20the%20requirements%20of%20this%20role,%20and%20we%20anticipate%20that%20you%20will%20contribute%20significantly%20to%20our%20team.%20At%20[Company%20Name],%20we%20are%20dedicated%20to%20cultivating%20a%20vibrant%20and%20collaborative%20work%20environment%E2%80%94one%20where%20talented%20individuals%20like%20yourself%20can%20thrive.%20Your%20unique%20abilities%20and%20experiences%20resonate%20harmoniously%20with%20our%20organizational%20values%20and%20objectives.%20As%20[Position%20Title],%20your%20responsibilities%20will%20encompass%20[Brief%20Description%20of%20Responsibilities].%20Your%20proficiency%20in%20[Key%20Skills%20or%20Technologies]%20will%20play%20a%20pivotal%20role%20in%20our%20pursuit%20of%20excellence%20and%20in%20delivering%20exceptional%20outcomes%20for%20our%20clients.%20We%20are%20genuinely%20excited%20about%20the%20prospect%20of%20collaborating%20with%20you%20and%20are%20confident%20that%20you%20will%20be%20a%20valuable%20asset%20to%20our%20team.%20Should%20you%20be%20interested%20in%20exploring%20this%20opportunity%20further,%20please%20do%20not%20hesitate%20to%20reach%20out.%20We%20would%20be%20delighted%20to%20arrange%20a%20meeting%20to%20address%20any%20queries%20you%20may%20have%20and%20provide%20additional%20insights%20into%20the%20role%20and%20our%20company.%20Thank%20you%20for%20considering%20this%20offer.%20We%20eagerly%20await%20your%20response.%20Warm%20regards,%20[Your%20Name]%20[Your%20Position]%20[Company%20Name]&fs=1&tf=cm"
+                target="_blank" rel="noopener"><img loading="lazy" src="assets/images/social-links/email.png"
+                  alt="Gmail" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/moubarak-elkouchi-353021148/" target="_blank"
+                rel="noopener"><img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Call" href="https://wa.me/0676242121" target="_blank" rel="noopener"><img loading="lazy"
+                  src="assets/images/social-links/whatsapp.png" alt="Call" /></a>
+            </li>
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener"
+            href="https://github.com/MbarekTheEagle">Moubarak EL Kouchi.</a>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Dark Theme</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
